@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>FLT Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    <a class="navbar-brand mr-1" href="index.html">Fast & Lean Tracking System</a>
+    <ul class="navbar-nav ml-auto mr-0 mr-md-3 my-2 my-md-0">
+
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="abnormality.html" role="button" aria-haspopup="true">
+          <span class="badge badge-danger">1</span>
+          <i class="fas fa-exclamation-circle fa-fw">
+          </i>
+          <b>Abnormality</b>
+        </a>
+      </li>
+
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-circle fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right  float: right;" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="user.html">User Settings</a>
+            <a class="dropdown-item" href="change-password.html"> Password</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="wrapper">
+
+    <div id="content-wrapper">
+    
+      <div class="container-fluid">
+      <div class="content">
+
+        <div class="row">
+          <div class="col-md-2 pr-1 mb-0">
+          <div class="alert alert-light text-center">
+            <a href="qualityawareness.html" style="color:black;">Quality Awareness For Today<h3>
+            <b style="color:#007bff;">160</b></h3></a>
+          </div>
+          </div>
+          <div class="col-md-2 pr-1 mb-0">
+          <div class="alert alert-light text-center">
+            <a href="freight.html" style="color:black;">Total Freight Air Cost<h3>
+            <b style="color:#007bff;">$208K</b></h3></a>
+          </div>
+          </div>
+          <div class="col-md-2 pr-1 mb-0">
+          <div class="alert alert-light text-center">
+            <a href="rework.html" style="color:black;">Rework Charges of 2019<h3>
+            <b style="color:#007bff;">571K</b></h3></a>
+          </div>
+          </div>
+          <div class="col-md-2  pr-1 mb-0">
+          <div class="alert alert-light text-center">
+            <a href="collectionrate.html" style="color:black;">Collection Rate of 2019<h3>
+            <b style="color:#ffc107;">81%</b></h3></a>
+          </div>
+          </div>
+          <div class="col-md-2 pr-1 mb-0">
+          <div class="alert alert-light text-center">
+            <a href="ontimedelivery.html" style="color:black;">On-Time Delivery of 2019<h3>
+            <b style="color:#049F0C;">112%</b></h3></a>
+          </div>
+          </div>
+          <div class="col-md-2 pr-1 mb-0">
+          <div class="alert alert-light text-center">
+            <a href="inventoryturn.html" style="color:black;">Ave. Inventory Turn 2019<h3>
+            <b style="color:#049F0C;">18</b></h3></a>
+          </div>
+          </div>
+      </div>
+
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="card mb-0">
+                    <a href="productivity.html" style="color:black;" class="text-center">Productivity Performance</a>
+                    <div class="alert alert-white text-center">
+                      <a><h7>OPL Perfomance 2019</h7></a>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 107%;" aria-valuenow="107" aria-valuemin="0" aria-valuemax="100"><h6>107%</h6></div>
+                      </div>
+                    </div>
+                    <div class="alert alert-white text-center">
+                      <a><h7>OPR Performance 2019</h7></a>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><h6>80%</h6></div>
+                      </div>
+                    </div>
+                    <div class="alert alert-white text-center">
+                      <a><h7>ISP Performance 2019</h7></a>
+                      <div class="progress">
+                        <div class="progress-bad" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><h6>50%</h6></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+               
+                <div class="col-md-3">
+                  <div class="card mb-1">
+                      <a href="claim.html">
+                        <canvas id="claim-chart" width="100%" height="63%"></canvas></a>
+                  </div>
+                </div>
+                
+                <div class="col-md-3">
+                  <div class="card mb-0">
+                      <a href="customersatisfaction.html">
+                        <canvas id="customersatisfaction-chart" width="100%" height="63%"></canvas></a>
+                  </div>
+                </div>
+                
+                <div class="col-md-3">
+                  <div class="card mb-0">
+                      <a href="defects.html">
+                        <canvas id="defects-chart" width="100%" height="63%"></canvas></a>
+                  </div>
+                </div>
+                
+
+              </div>
+      
+              <div class="row">
+
+                <div class="col-md-2">
+                  <div class="card mb-0">
+                    <a href="5why.html" style="color:black;" class="text-center">Overall Average 5 Why</a>
+                    <div class="alert alert-white text-center">
+                      <a><h7>No 5 Why of 2019</h7></a>
+                      <div class="progress">
+                        <div class="progress-bad" role="progressbar" style="width: 30%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"><h6>30%</h6></div>
+                      </div>
+                    </div>
+                    <div class="alert alert-white text-center">
+                      <a><h7>With 5 Why of 2019</h7></a>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"><h6>60%</h6></div>
+                      </div>
+                    </div>
+                    <div class="alert alert-white text-center">
+                      <a><h7>Approved of 2019</h7></a>
+                      <div class="progress">
+                        <div class="progress-bad" role="progressbar" style="width: 40%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100"><h6>40%</h6></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="card mb-1">
+                      <a href="sales.html">
+                        <canvas id="sales-chart" width="100%" height="50%"></canvas></a>
+                  </div>
+                </div>
+                
+
+                <div class="col-md-5">
+                  <div class="card mb-0">
+                    <a href="efficiency.html">
+                      <canvas id="efficiency-chart" width="100%" height="50%"></canvas></a>
+                  </div>
+                </div>
+                
+               
+                
+
+              </div>      
+     
+      </div>
+      </div>
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © Fast & Lean Tracking System 2019</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+  
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/chart-bar-demo.js"></script>
+
+</body>
+</html>
