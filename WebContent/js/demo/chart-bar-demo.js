@@ -61,7 +61,8 @@ new Chart(document.getElementById("customersatisfaction-chart"), {
       display: true,
       text: 'Total Customer Satisfaction of 2019'
 },
-legend: { display: false }, plugins: {
+legend: { display: false }, 
+plugins: {
   datalabels: {
       formatter: (value, ctx) => {
       
@@ -76,7 +77,13 @@ legend: { display: false }, plugins: {
     
       },
       color: '#fff',
+      align: 'end',
            }
+},
+elements: {
+  arc: {
+      borderWidth: 0
+  }
 }
 }
 });
@@ -122,8 +129,14 @@ scales: {
           
             },
             color: '#fff',
+            align: 'end',
                  }
-    }
+    },
+    elements: {
+      arc: {
+          borderWidth: 0
+      }
+  }
     }
 });
 
@@ -212,7 +225,7 @@ data: {
     datasets: [{
         label: 'Total Claim of 2019',
         data: [120,48,60,72,36,24],
-        backgroundColor: ["rgba(31, 135, 255, 1)","rgba(31, 135, 255, 0.8)","rgba(31, 135, 255, 0.6)","rgba(31, 135, 255, 0.4)","rgba(31, 135, 255, 0.2)","#dc3545"],
+        backgroundColor: ["rgba(31, 135, 255, 1)","rgba(31, 135, 255, 0.9)","rgba(31, 135, 255, 0.8)","rgba(31, 135, 255, 0.7)","rgba(31, 135, 255, 0.6)","#dc3545"],
     }],
     labels: ["Customer", "Receiving", "Ads", "Sample", "ISIR", "YI/QI"],
     
@@ -238,7 +251,13 @@ options: {
       
         },
         color: '#fff',
+        align: 'end',
              }
+},
+elements: {
+  arc: {
+      borderWidth: 0
+  }
 }
 }
 });
@@ -269,7 +288,8 @@ yAxes: [{
       }
       }]
 },
-    legend: { display: false }, plugins: {
+    legend: { display: false },
+     plugins: {
       datalabels: {
           formatter: (value, ctx) => {
           
@@ -284,8 +304,14 @@ yAxes: [{
         
           },
           color: '#fff',
+          align: 'end',
                }
-  }
+  },
+  elements: {
+    arc: {
+        borderWidth: 0
+    }
+}
 }
 });
 
