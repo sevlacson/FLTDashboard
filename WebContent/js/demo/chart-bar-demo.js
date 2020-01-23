@@ -14,7 +14,6 @@ new Chart(document.getElementById("efficiency-chart"), {
           label: "Total Efficiency",
           type: "bar",
           backgroundColor: ["rgba(31, 135, 255, 1)","#dc3545","rgba(31, 135, 255, 1)","#dc3545", "#dc3545", "rgba(31, 135, 255, 1)", "#dc3545"], 
-          categoryPercentage: 0.5,
           barPercentage: 1,
           data: [101,74,108,87,86,107,86],
         },
@@ -57,8 +56,8 @@ new Chart(document.getElementById("customersatisfaction-chart"), {
       display: true,
       text: 'Total Customer Satisfaction of 2019'
 },
-legend: { display: false }
-},
+legend: { display: false },
+}
 });
 
 //Defects - Chart
@@ -211,5 +210,6 @@ yAxes: [{
       }]
 },
     legend: { display: false }
-  }
+}
 });
+
