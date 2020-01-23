@@ -162,7 +162,49 @@ yAxes: [{
   }
 });
 
-//Claim - Chart
+var testData = [{
+  label: 'Total Claim of 2019',
+  data: [120,48,60,72,36,24],
+  backgroundColor: ["rgba(31, 135, 255, 1)","rgba(31, 135, 255, 0.8)","rgba(31, 135, 255, 0.6)","rgba(31, 135, 255, 0.4)","rgba(31, 135, 255, 0.2)","#dc3545"],
+}];
+
+var testoptions = {
+  title: {
+    display: true,
+      text: 'Total Claim of 2019'
+  },
+  legend: { display: false },
+  plugins: {
+    datalabels: {
+        formatter: (value, ctx2) => {
+        
+          let sum = 0;
+          let dataArr = ctx2.chart.data.datasets[0].data;
+          dataArr.map(data => {
+              sum += data;
+          });
+          let percentage = (value*100 / sum).toFixed(2)+"%";
+          return percentage;
+
+      
+        },
+        color: '#fff',
+             }
+}
+};
+
+var ctx2 = document.getElementById("claim-chart13").getContext("2d");
+
+var myChartTest13 = new Chart(ctx2, {
+  type: 'pie',
+  data: {
+      datasets: testData,
+      labels: ["Customer", "Receiving", "Aids", "Sample", "ISIR", "YI/QI"]
+  },
+        options: testoptions
+});
+
+/*Claim - Chart
 new Chart(document.getElementById("claim-chart"), {
 type: 'pie',
 data: {
@@ -179,10 +221,27 @@ options: {
     display: true,
       text: 'Total Claim of 2019'
   },
-  legend: { display: false }
-},
-});
+  legend: { display: false },
+  plugins: {
+    datalabels: {
+        formatter: (value, ctx) => {
+        
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map(data => {
+              sum += data;
+          });
+          let percentage = (value*100 / sum).toFixed(2)+"%";
+          return percentage;
 
+      
+        },
+        color: '#fff',
+             }
+}
+}
+});
+*/
 //Abnormality - Chart
 new Chart(document.getElementById("abnormality-chart"), {
   type: 'pie',
