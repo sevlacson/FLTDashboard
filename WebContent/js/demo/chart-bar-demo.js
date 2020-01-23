@@ -14,6 +14,8 @@ new Chart(document.getElementById("efficiency-chart"), {
           label: "Total Efficiency",
           type: "bar",
           backgroundColor: ["rgba(31, 135, 255, 1)","#dc3545","rgba(31, 135, 255, 1)","#dc3545", "#dc3545", "rgba(31, 135, 255, 1)", "#dc3545"], 
+          categoryPercentage: 0.5,
+          barPercentage: 1,
           data: [101,74,108,87,86,107,86],
         },
       ]
@@ -40,7 +42,7 @@ scales: {
 
 //Customer Satisfaction - Chart
 new Chart(document.getElementById("customersatisfaction-chart"), {
-  type: 'doughnut',
+  type: 'pie',
   data: {
     labels: ["1st Div", "2nd Div", "3rd Div", "4th Div", "5th Div", "6th Div", "7th Div"],
     datasets: [{
@@ -51,11 +53,9 @@ new Chart(document.getElementById("customersatisfaction-chart"), {
     ]
   },
   options: {
-    rotation: 1 * Math.PI,
-        circumference: 1 * Math.PI,
     title: {
       display: true,
-      text: 'Overall Customer Satisfaction of 2019'
+      text: 'Total Customer Satisfaction of 2019'
 },
 legend: { display: false }
 },
@@ -63,20 +63,18 @@ legend: { display: false }
 
 //Defects - Chart
 new Chart(document.getElementById("defects-chart"), {
-    type: 'doughnut',
+    type: 'pie',
     data: {
       labels: ["1st Div", "2nd Div", "3rd Div", "4th Div", "5th Div", "6th Div", "7th Div"],
       datasets: [{
           label: "Total Functional Defects per no. of line",
-          type: "doughnut",
+          type: "pie",
           backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 0.9)", "rgba(31, 135, 255, 0.8)", "rgba(31, 135, 255, 0.7)", "#dc3545", "rgba(31, 135, 255, 0.6)", "rgba(31, 135, 255, 0.5)"],
           data: [18,14,15,12,10,19,17],
         },
       ]
     },
     options: {
-      rotation: 1 * Math.PI,
-        circumference: 1 * Math.PI,
       title: {
         display: true,
         text: 'Total Functional Defects Per No. of Line 2019'
@@ -167,7 +165,7 @@ yAxes: [{
 
 //Claim - Chart
 new Chart(document.getElementById("claim-chart"), {
-type: 'doughnut',
+type: 'pie',
 data: {
     datasets: [{
         label: 'Total Claim of 2019',
@@ -178,13 +176,40 @@ data: {
     
 },
 options: {
-  rotation: 1 * Math.PI,
-        circumference: 1 * Math.PI,
   title: {
     display: true,
-      text: 'Overall Claim of 2019'
+      text: 'Total Claim of 2019'
   },
   legend: { display: false }
 },
 });
 
+//Abnormality - Chart
+new Chart(document.getElementById("abnormality-chart"), {
+  type: 'pie',
+  data: {
+    labels: ["1st Div", "2nd Div", "3rd Div", "4th Div", "5th Div", "6th Div", "7th Div"],
+    datasets: [{
+        label: "Achievement",
+        type: "pie",
+        backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 0.9)", "rgba(31, 135, 255, 0.8)", "rgba(31, 135, 255, 0.7)", "#dc3545", "rgba(31, 135, 255, 0.6)", "rgba(31, 135, 255, 0.5)"], 
+        data: [64,59,58,61,56,65,60],
+      },
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Overall Abnormality of 2019'
+    },
+scales: {
+yAxes: [{
+      display: false,
+      ticks: {
+      beginAtZero: true,
+      }
+      }]
+},
+    legend: { display: false }
+  }
+});
