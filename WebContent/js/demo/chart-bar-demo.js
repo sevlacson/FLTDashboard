@@ -61,7 +61,7 @@ new Chart(document.getElementById("customersatisfaction-chart"), {
     labels: ["1st Div", "2nd Div", "3rd Div", "4th Div", "5th Div", "6th Div", "7th Div"],
     datasets: [{
         label: "Achievement",
-        backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 0.9)", "rgba(31, 135, 255, 0.8)", "rgba(31, 135, 255, 0.7)", "rgba(31, 135, 255, 0.6)", "#dc3545", "rgba(31, 135, 255, 0.5)"], 
+        backgroundColor: ["rgba(0, 140, 103, 1)", "rgba(0, 140, 103, 0.9)", "rgba(0, 140, 103, 0.8)", "rgba(0, 140, 103, 0.7)", "rgba(0, 140, 103, 0.6)", "#dc3545", "rgba(0, 140, 103, 0.5)"], 
         data: [4146,4326,4953,5000,8373,798,4065],
       },
     ]
@@ -106,7 +106,7 @@ new Chart(document.getElementById("defects-chart"), {
       datasets: [{
           label: "Total Functional Defects per no. of line",
           type: "pie",
-          backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 0.9)", "rgba(31, 135, 255, 0.8)", "rgba(31, 135, 255, 0.7)", "#dc3545", "rgba(31, 135, 255, 0.6)", "rgba(31, 135, 255, 0.5)"],
+          backgroundColor: ["rgba(130, 167, 255, 1)", "rgba(130, 167, 255, 0.9)", "rgba(130, 167, 255, 0.8)", "rgba(130, 167, 255, 0.7)", "#dc3545", "rgba(130, 167, 255, 0.6)", "rgba(130, 167, 255, 0.5)"],
           data: [18,14,15,12,10,19,17],
         },
       ]
@@ -290,7 +290,7 @@ new Chart(document.getElementById("abnormality-chart"), {
     datasets: [{
         label: "Achievement",
         type: "pie",
-        backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 0.9)", "rgba(31, 135, 255, 0.8)", "rgba(31, 135, 255, 0.7)", "#dc3545", "rgba(31, 135, 255, 0.6)", "rgba(31, 135, 255, 0.5)"], 
+        backgroundColor: ["rgba(255, 107, 93, 1)", "rgba(255, 107, 93, 0.9)", "rgba(255, 107, 93, 0.8)", "rgba(255, 107, 93, 0.7)", "#dc3545", "rgba(255, 107, 93, 0.6)", "rgba(255, 107, 93, 0.5)"], 
         data: [64,59,58,61,56,65,60],
       },
     ]
