@@ -245,7 +245,7 @@ data: {
     datasets: [{
         label: 'Total Claim of 2019',
         data: [120,48,60,72,36,24],
-        backgroundColor: ["rgba(31, 135, 255, 1)","rgba(31, 135, 255, 0.9)","rgba(31, 135, 255, 0.8)","rgba(31, 135, 255, 0.7)","rgba(31, 135, 255, 0.6)","#dc3545"],
+        backgroundColor: ["rgba(255, 107, 93, 1)","rgba(255, 107, 93, 0.9)","rgba(255, 107, 93, 0.8)","rgba(255, 107, 93, 0.7)","rgba(255, 107, 93, 0.6)","#dc3545"],
     }],
     labels: ["Customer", "Receiving", "Ads", "Sample", "ISIR", "YI/QI"],
     
@@ -290,7 +290,7 @@ new Chart(document.getElementById("abnormality-chart"), {
     datasets: [{
         label: "Achievement",
         type: "pie",
-        backgroundColor: ["rgba(255, 107, 93, 1)", "rgba(255, 107, 93, 0.9)", "rgba(255, 107, 93, 0.8)", "rgba(255, 107, 93, 0.7)", "#dc3545", "rgba(255, 107, 93, 0.6)", "rgba(255, 107, 93, 0.5)"], 
+        backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 0.9)", "rgba(31, 135, 255, 0.8)", "rgba(31, 135, 255, 0.7)", "#dc3545", "rgba(31, 135, 255, 0.6)", "rgba(31, 135, 255, 0.5)"], 
         data: [64,59,58,61,56,65,60],
       },
     ]
