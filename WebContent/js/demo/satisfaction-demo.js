@@ -41,7 +41,7 @@ new Chart(document.getElementById("subsatisfaction-chart"), {
     datasets: [{
         label: "Acheived",
         type: "bar",
-        backgroundColor: "rgba(31, 135, 255, 1)",
+        backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545"], 
         data: [1245,1140,695,814,252],
         datalabels: {
           // display labels for this specific dataset
