@@ -11,7 +11,12 @@ new Chart(document.getElementById("subdefects-chart"), {
         fill: false
       }]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Functional Defects Per No. of Line - 1st Division'

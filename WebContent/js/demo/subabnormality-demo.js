@@ -10,7 +10,12 @@ new Chart(document.getElementById("subabnormality-chart"), {
         fill: false
       }]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Abnormality Statistics as of January 2019'

@@ -45,7 +45,7 @@ new Chart(document.getElementById("claim2-chart"), {
         lineTension: 0,
         datalabels: {
           // display labels for this specific dataset
-          display: true,
+          display: false,
         },
         fill: false
       }]

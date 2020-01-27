@@ -105,7 +105,12 @@ new Chart(document.getElementById("sales2-chart"), {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Sales of 2019 (in Million U.S Dollars)'

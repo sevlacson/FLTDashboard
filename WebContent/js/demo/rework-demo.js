@@ -16,7 +16,7 @@ var myReworkChart = new Chart(ctx, {
   options: {plugins: {
     datalabels: {
        // hide datalabels for all datasets
-       display: true
+       display: false
     }
   },
     title: {
@@ -45,7 +45,7 @@ var myReworkChart = new Chart(ctx, {
   options: {plugins: {
     datalabels: {
        // hide datalabels for all datasets
-       display: true
+       display: false
     }
   },
     title: {

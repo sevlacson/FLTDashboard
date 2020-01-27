@@ -8,10 +8,6 @@ new Chart(document.getElementById("inventory-chart"), {
         label: "Number of Days",
         borderColor: "#dc3545",
         lineTension: 0,
-        datalabels: {
-          // display labels for this specific dataset
-          display: true,
-        },
         fill: false
       }, { 
         data: [10,10,10,10,10,10,10,10,10,10,10,10],
@@ -53,10 +49,6 @@ new Chart(document.getElementById("subinventory-chart"), {
         label: "Accomplishment",
         borderColor: "#dc3545",
         lineTension: 0,
-        datalabels: {
-          // display labels for this specific dataset
-          display: true,
-        },
         fill: false
       }]
   },

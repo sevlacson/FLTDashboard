@@ -48,7 +48,12 @@ new Chart(document.getElementById("efficiency2-chart"), {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Total Line of Efficiency for 2019'

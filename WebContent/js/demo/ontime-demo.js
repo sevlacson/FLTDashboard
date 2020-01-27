@@ -15,10 +15,6 @@ new Chart(document.getElementById("ontime-chart"), {
         borderColor: "#dc3545",
         data: [104,108,102,110,116,112,120,104,106,100,99,107],
         fill: false,
-        datalabels: {
-          // display labels for this specific dataset
-          display: true,
-        },
         lineTension: 0
       },
     ]
@@ -63,10 +59,6 @@ new Chart(document.getElementById("subontime-chart"), {
         label: "Accomplishment",
         borderColor: "#fd7e14",
         lineTension: 0,
-        datalabels: {
-          // display labels for this specific dataset
-          display: true,
-        },
         fill: false
       }
     ]

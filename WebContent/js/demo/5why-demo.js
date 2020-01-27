@@ -65,7 +65,7 @@ new Chart(document.getElementById("sub5why-chart"), {
 options: {plugins: {
   datalabels: {
      // hide datalabels for all datasets
-     display: true,
+     display: false,
   }
 },
   title: {

@@ -44,11 +44,6 @@ new Chart(document.getElementById("defects2-chart"), {
         label: "1st Division",
         borderColor: "#dc3545",
         lineTension: 0,
-        datalabels: {
-          // display labels for this specific dataset
-          display: true,
-          color: '#fff'
-        },
         fill: false
       }, { 
         data: [6,5,6,6,5,4,3,4,3,2,1,1],
@@ -89,7 +84,12 @@ new Chart(document.getElementById("defects2-chart"), {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Total Functional Defects Per No. of Line 2019'

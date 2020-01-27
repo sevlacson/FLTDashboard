@@ -84,7 +84,12 @@ new Chart(document.getElementById("abnormality1-chart"), {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Overall Abnormality of 2019'

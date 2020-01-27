@@ -22,7 +22,7 @@ new Chart(document.getElementById("qa-chart"), {
     plugins: {
     datalabels: {
        // hide datalabels for all datasets
-       display: true,
+       display: false,
     }
   },
     title: {
