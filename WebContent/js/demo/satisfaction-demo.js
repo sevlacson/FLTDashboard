@@ -8,6 +8,11 @@ type: 'bar',
           type: "bar",
           backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545", "rgba(31, 135, 255, 1)"], 
           data: [4146,4326,4953,5000,8373,798,4065],
+          datalabels: {
+            // display labels for this specific dataset
+            display: true,
+            color: '#fff'
+          },
         },
       ]
     },
@@ -38,6 +43,11 @@ new Chart(document.getElementById("subsatisfaction-chart"), {
         type: "bar",
         backgroundColor: "rgba(31, 135, 255, 1)",
         data: [1245,1140,695,814,252],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },

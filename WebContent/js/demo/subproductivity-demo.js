@@ -14,22 +14,42 @@ new Chart(document.getElementById("subproductivity-chart"), {
         type: "bar",
         backgroundColor: "rgba(31, 135, 255, 1)",
         data: [95,103,97,121,93,167,119,100],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
       {
         label: "OPR",
         type: "bar",
         backgroundColor: "rgba(253, 162, 43, 1)",
         data: [103,95,103,97,121,93,185,100],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
       {
         label: "ISP",
         type: "bar",
         backgroundColor: "rgba(150, 150, 150, 1)",
         data: [121,95,93,110,122,88,147,100],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Productivity Performance - All Divisions'
@@ -65,10 +85,20 @@ new Chart(document.getElementById("subproductivity1-chart"), {
         type: "bar",
         backgroundColor: ["#dc3545","rgba(31, 135, 255, 1)","#dc3545","rgba(31, 135, 255, 1)","#dc3545","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)"],
         data: [95,103,97,121,93,167,119,100],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'OPL - All Divisions'

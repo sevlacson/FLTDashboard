@@ -8,6 +8,11 @@ new Chart(document.getElementById("claim1-chart"), {
         type: "bar",
         backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545"],
         data: [120,48,60,72,36,24],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },
@@ -38,6 +43,10 @@ new Chart(document.getElementById("claim2-chart"), {
         label: "Total Claim",
         borderColor: "#dc3545",
         lineTension: 0,
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+        },
         fill: false
       }]
   },

@@ -16,17 +16,32 @@ yAxisID: 'y-axis-1'
         type: "bar",
         backgroundColor: ["rgba(31, 135, 255, 1)", "#dc3545", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)"],
         data: [23.3,1.3,9.6,6.8,6,9.9,4.9,5],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
 yAxisID: 'y-axis-2'
       }, {
         label: "Actual Sales",
         type: "bar",
         backgroundColor: ["#529dee", "#d85562", "#529dee", "#529dee", "#529dee", "#529dee", "#529dee", "#529dee"],
         data: [22.5,2,11.5,8,9.9,8.7,5,4],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
 yAxisID: 'y-axis-2'
       },
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Sales of December 2019 (in Million U.S Dollars)'

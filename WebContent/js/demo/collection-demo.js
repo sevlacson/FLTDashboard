@@ -15,11 +15,20 @@ new Chart(document.getElementById("collection-chart"), {
         borderColor: "#dc3545",
         data: [56,61,81,56,87,100,120,78,75,69,81,99],
         fill: false,
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+        },
         lineTension: 0
       },
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Collection Rate Statistics of 2019'
@@ -54,11 +63,20 @@ new Chart(document.getElementById("subcollection-chart"), {
         label: "Collection Rate",
         borderColor: "#dc3545",
         lineTension: 0,
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+        },
         fill: false
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Collection Rate Statistics of April 2019'

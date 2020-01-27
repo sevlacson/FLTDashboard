@@ -8,6 +8,11 @@ new Chart(document.getElementById("abnormality-chart"), {
         type: "bar",
         backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)"], 
         data: [64,59,58,61,56,65,60],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },
@@ -99,6 +104,11 @@ new Chart(document.getElementById("abnormality2-chart"), {
         type: "bar",
         backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545"], 
         data: [10,11,12,13,7],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },

@@ -19,6 +19,12 @@ new Chart(document.getElementById("qa-chart"), {
     ]
   },
   options: {
+    plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: true,
+    }
+  },
     title: {
       display: true,
       text: 'No. of Daily Visitors'

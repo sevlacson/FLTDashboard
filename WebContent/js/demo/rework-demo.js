@@ -13,7 +13,12 @@ var myReworkChart = new Chart(ctx, {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: true
+    }
+  },
     title: {
       display: true,
       text: 'Total Rework of 2019'
@@ -37,7 +42,12 @@ var myReworkChart = new Chart(ctx, {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: true
+    }
+  },
     title: {
       display: true,
       text: 'Rework of January of 2019'

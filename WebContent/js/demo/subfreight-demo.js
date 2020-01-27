@@ -18,7 +18,12 @@ new Chart(document.getElementById("subfreight-chart"), {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: true
+    }
+  },
     title: {
       display: true,
       text: 'Total Freight of January 2019'

@@ -21,7 +21,13 @@ new Chart(document.getElementById("5why1-chart"), {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: true,
+       color: '#fff'
+    }
+  },
     title: {
       display: true,
       text: '5 Why of 2019'
@@ -56,7 +62,12 @@ new Chart(document.getElementById("sub5why-chart"), {
       }
     ]
   },
-options: {
+options: {plugins: {
+  datalabels: {
+     // hide datalabels for all datasets
+     display: true,
+  }
+},
   title: {
     display: true,
     text: '5 Why of January 2019'
@@ -84,10 +95,20 @@ new Chart(document.getElementById("5why-chart"), {
         type: "bar",
         backgroundColor: ["#dc3545", "rgba(31, 135, 255, 1)", "#dc3545"],
         data: [3,6,4],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       text: 'Overall Average 5 Why of 2019'

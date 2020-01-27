@@ -8,6 +8,11 @@ new Chart(document.getElementById("defects1-chart"), {
         type: "bar",
         backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)"],
         data: [18,14,15,12,10,19,17],
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
       },
     ]
   },
@@ -39,6 +44,11 @@ new Chart(document.getElementById("defects2-chart"), {
         label: "1st Division",
         borderColor: "#dc3545",
         lineTension: 0,
+        datalabels: {
+          // display labels for this specific dataset
+          display: true,
+          color: '#fff'
+        },
         fill: false
       }, { 
         data: [6,5,6,6,5,4,3,4,3,2,1,1],
