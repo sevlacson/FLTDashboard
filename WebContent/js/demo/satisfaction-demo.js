@@ -19,6 +19,7 @@ type: 'bar',
     options: {
       title: {
         display: true,
+        fontSize: 14,
         text: 'Overall Customer Satisfaction of 2019'
       },
 scales: {
@@ -54,6 +55,7 @@ new Chart(document.getElementById("subsatisfaction-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Customer Satisfaction - 1st Division'
     },
 scales: {

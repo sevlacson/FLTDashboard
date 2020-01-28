@@ -19,6 +19,7 @@ new Chart(document.getElementById("defects1-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Functional Defects Per No. of Line 2019'
     },
 scales: {
@@ -92,6 +93,7 @@ new Chart(document.getElementById("defects2-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Functional Defects Per No. of Line 2019'
     },
 	legend: { display: true }

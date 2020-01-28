@@ -37,6 +37,7 @@ options: {plugins: {
 },
   title: {
     display: true,
+    fontSize: 14,
     text: 'Productivity Performance - ADMIN SERVICES DEPT'
   },
 scales: {

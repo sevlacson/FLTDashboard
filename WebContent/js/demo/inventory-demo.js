@@ -25,6 +25,7 @@ new Chart(document.getElementById("inventory-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Inventory Turn of 2019'
     },
     scales: {
@@ -55,6 +56,7 @@ new Chart(document.getElementById("subinventory-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Inventory Turn of January 2019'
     },
     scales: {

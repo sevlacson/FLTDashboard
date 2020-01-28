@@ -27,6 +27,7 @@ new Chart(document.getElementById("ontime-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'On-Time Delivery of 2019'
     },
 scales: {
@@ -71,6 +72,7 @@ new Chart(document.getElementById("subontime-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'On-Time Delivery January 2019'
     },
       scales: {

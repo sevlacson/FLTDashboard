@@ -20,6 +20,7 @@ new Chart(document.getElementById("efficiency3-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Line Efficiency - 1st Division'
     },
 scales: {
@@ -78,6 +79,7 @@ new Chart(document.getElementById("efficiency4-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Line of Efficiency - 1st Division'
     },
     scales: {

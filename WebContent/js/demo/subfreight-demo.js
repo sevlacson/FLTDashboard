@@ -21,11 +21,12 @@ new Chart(document.getElementById("subfreight-chart"), {
   options: {plugins: {
     datalabels: {
        // hide datalabels for all datasets
-       display: true
+       display: false
     }
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Freight of January 2019'
     },
     ticks: {

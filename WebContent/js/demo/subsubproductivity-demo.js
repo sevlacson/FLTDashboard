@@ -52,6 +52,7 @@ new Chart(document.getElementById("subsubproductivity-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Productivity Performance - 1st Division'
     },
 scales: {
@@ -101,6 +102,7 @@ new Chart(document.getElementById("subsubproductivity1-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'OPL - 1st Division'
     },
 scales: {

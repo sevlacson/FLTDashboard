@@ -56,6 +56,7 @@ new Chart(document.getElementById("efficiency2-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Line of Efficiency for 2019'
     },
     scales: {

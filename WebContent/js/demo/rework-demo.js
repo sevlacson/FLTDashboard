@@ -21,6 +21,7 @@ var myReworkChart = new Chart(ctx, {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Rework of 2019'
     },
 	legend: { display: true }
@@ -50,6 +51,7 @@ var myReworkChart = new Chart(ctx, {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Rework of January of 2019'
     },
 	legend: { display: true }

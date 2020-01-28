@@ -37,7 +37,8 @@ new Chart(document.getElementById("efficiency-chart"), {
     },
       title: {
         display: true,
-        text: 'Total Line Efficiency of 2019'
+        text: 'Total Line Efficiency of 2019',
+        fontSize: 14
 },
 scales: {
 	yAxes: [{
@@ -69,6 +70,7 @@ new Chart(document.getElementById("customersatisfaction-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Customer Satisfaction of 2019'
 },
 legend: { display: false }, 
@@ -114,6 +116,7 @@ new Chart(document.getElementById("defects-chart"), {
     options: {
       title: {
         display: true,
+        fontSize: 14,
         text: 'Total Functional Defects Per No. of Line 2019'
       },
 scales: {
@@ -196,6 +199,7 @@ yAxisID: 'y-axis-2'
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Sales of December 2019 (in Million U.S Dollars)'
     },
 scales: {
@@ -253,6 +257,7 @@ data: {
 options: {
   title: {
     display: true,
+    fontSize: 14,
       text: 'Total Claim of 2019'
   },
   legend: { display: false },
@@ -298,6 +303,7 @@ new Chart(document.getElementById("abnormality-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Overall Abnormality of 2019'
     },
 scales: {

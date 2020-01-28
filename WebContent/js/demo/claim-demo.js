@@ -19,6 +19,7 @@ new Chart(document.getElementById("claim1-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Claim of 2019'
     },
 scales: {
@@ -53,6 +54,7 @@ new Chart(document.getElementById("claim2-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Claim of 2019'
     },
     scales: {

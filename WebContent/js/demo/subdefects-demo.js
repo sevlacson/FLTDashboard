@@ -19,6 +19,7 @@ new Chart(document.getElementById("subdefects-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Functional Defects Per No. of Line - 1st Division'
     },
     scales: {

@@ -20,6 +20,7 @@ new Chart(document.getElementById("efficiency5-chart"), {
   options: {
     title: {
       display: true,
+      fontSize: 14,
       text: 'No. of Daily Visitors'
     },
     ticks: {

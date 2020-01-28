@@ -23,6 +23,7 @@ var myFreightChart = new Chart(ctx, {
     },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Total Air Freight Cost of 2019 (In Thousand U.S Dollars)'
     },
 scales: {
@@ -70,6 +71,7 @@ yAxisID: 'y-axis-2'
     },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Freight of Parts & Products (In Thousand U.S Dollars)'
     },
 scales: {

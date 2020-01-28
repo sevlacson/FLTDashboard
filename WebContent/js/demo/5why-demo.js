@@ -30,6 +30,7 @@ new Chart(document.getElementById("5why1-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: '5 Why of 2019'
     },
 	legend: { display: true }
@@ -70,6 +71,7 @@ options: {plugins: {
 },
   title: {
     display: true,
+    fontSize: 14,
     text: '5 Why of January 2019'
   },
 scales: {
@@ -111,6 +113,7 @@ new Chart(document.getElementById("5why-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Overall Average 5 Why of 2019'
     },
 scales: {

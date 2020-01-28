@@ -27,6 +27,7 @@ new Chart(document.getElementById("collection-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Collection Rate Statistics of 2019'
     },
 scales: {
@@ -71,6 +72,7 @@ new Chart(document.getElementById("subcollection-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Collection Rate Statistics of April 2019'
     },
       scales: {

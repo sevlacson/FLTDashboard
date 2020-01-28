@@ -44,6 +44,7 @@ yAxisID: 'y-axis-2'
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Sales of December 2019 (in Million U.S Dollars)'
     },
 scales: {
@@ -113,6 +114,7 @@ new Chart(document.getElementById("sales2-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'Sales of 2019 (in Million U.S Dollars)'
     },
     scales: {

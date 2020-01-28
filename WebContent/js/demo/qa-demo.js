@@ -27,6 +27,7 @@ new Chart(document.getElementById("qa-chart"), {
   },
     title: {
       display: true,
+      fontSize: 14,
       text: 'No. of Daily Visitors'
     },
 	legend: { display: true }
