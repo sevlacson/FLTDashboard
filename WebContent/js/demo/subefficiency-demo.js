@@ -14,10 +14,25 @@ new Chart(document.getElementById("efficiency3-chart"), {
         type: "bar",
         backgroundColor: "rgba(31, 135, 255, 1)",
         data: [101,100,104,100,100],
+        datalabels: {
+          formatter: (value, ctx) => {
+          
+            let percentage = (value)+"%";
+            return percentage;
+    
+          },
+          color: '#fff',
+          display: true
+               }
       },
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       fontSize: 14,
@@ -76,7 +91,12 @@ new Chart(document.getElementById("efficiency4-chart"), {
       }
     ]
   },
-  options: {
+  options: {plugins: {
+    datalabels: {
+       // hide datalabels for all datasets
+       display: false
+    }
+  },
     title: {
       display: true,
       fontSize: 14,
