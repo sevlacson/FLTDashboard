@@ -6,7 +6,7 @@ type: 'bar',
       datasets: [{
           label: "Achievement",
           type: "bar",
-          backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545", "rgba(31, 135, 255, 1)"], 
+          backgroundColor: ["rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","#dc3545", "rgba(31, 135, 255, 1)"], 
           data: [4146,4326,4953,5000,8373,798,4065],
           datalabels: {
             // display labels for this specific dataset
@@ -38,18 +38,18 @@ scales: {
 new Chart(document.getElementById("subsatisfaction-chart"), {
   type: 'bar',
   data: {
-    labels: ["Admin Services Dept", "Domestic", "Ford 1 MFG", "Ford 2 MFG", "GA"],
+    labels: ["Admin Services Dept","Domestic","Ford 1 MFG","Ford 2 MFG","GA"],
     datasets: [{
         label: "Acheived",
         type: "bar",
-        backgroundColor: ["rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545"], 
+        backgroundColor: ["rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","#dc3545"], 
         data: [1245,1140,695,814,252],
         datalabels: {
           // display labels for this specific dataset
           display: true,
           color: '#fff'
         },
-      },
+      }
     ]
   },
   options: {
