@@ -16,7 +16,7 @@ new Chart(document.getElementById("subsubsubproductivity-chart"), {
         fill: false
       }, { 
         data: [101,99,98,102,100,105,95,98,102,99,101,100],
-        label: "OPR",
+        label: "KAIZEN",
         borderColor: "#ffc107",
         lineTension: 0,
         fill: false

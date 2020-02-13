@@ -21,7 +21,7 @@ new Chart(document.getElementById("subsubproductivity-chart"), {
         },
       },
       {
-        label: "OPR",
+        label: "KAIZEN",
         type: "bar",
         backgroundColor: "rgba(253, 162, 43, 1)",
         data: [40,125,117,133,100],
