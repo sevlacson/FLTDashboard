@@ -1,22 +1,22 @@
 //Rework - Chart
 var ctx = document.getElementById("myReworkChart");
 var myReworkChart = new Chart(ctx, {
-  type: 'line',
+  type: 'bar',
   data: {
     labels: ["January","February","March","April","May","June","July","August","September","October","November","December"],
     datasets: [{ 
         data: [10954,81704,3495,413558,18023,26159,2292,3419,11184,23300,12454,9872],
         label: "Total rework",
-        borderColor: "#dc3545",
-        lineTension: 0,
-        fill: false
+        backgroundColor: ["rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)","rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "#dc3545", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)", "rgba(31, 135, 255, 1)",], 
+        lineTension: 0
       }
     ]
   },
   options: {plugins: {
     datalabels: {
        // hide datalabels for all datasets
-       display: false
+       display: true,
+       color: '#fff'
     }
   },
     title: {
